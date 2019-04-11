@@ -77,20 +77,17 @@
 
 
 
-<meta name="description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta name="description" content="1.例子&amp;emsp;&amp;emsp;我们先讲单调队列在干嘛。&amp;emsp;&amp;emsp;数列为：6 4 10 10 8 6 4 2 12 14，N=10,K=3;我们要构造一个长度为K的单调递减队列：&amp;emsp;&amp;emsp;首先，将6和它的位置0放入队列中，用（6，10）表示，每一步变化如下：插入6：(6,0);插入4：(6,0),(4,1);插入10：(10,2);插入第二个10，保留后面那个：(10,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法笔记">
-<meta property="og:url" content="http://yoursite.com/2019/04/02/Markdown/index.html">
+<meta property="og:title" content="单调队列">
+<meta property="og:url" content="http://yoursite.com/2019/04/11/单调队列/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta property="og:description" content="1.例子&amp;emsp;&amp;emsp;我们先讲单调队列在干嘛。&amp;emsp;&amp;emsp;数列为：6 4 10 10 8 6 4 2 12 14，N=10,K=3;我们要构造一个长度为K的单调递减队列：&amp;emsp;&amp;emsp;首先，将6和它的位置0放入队列中，用（6，10）表示，每一步变化如下：插入6：(6,0);插入4：(6,0),(4,1);插入10：(10,2);插入第二个10，保留后面那个：(10,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/02/Markdown/imgs/girl1.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/02/Markdown/imgs/main.png">
-<meta property="og:updated_time" content="2019-04-02T08:58:49.020Z">
+<meta property="og:updated_time" content="2019-04-11T13:48:58.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法笔记">
-<meta name="twitter:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/02/Markdown/imgs/girl1.png">
+<meta name="twitter:title" content="单调队列">
+<meta name="twitter:description" content="1.例子&amp;emsp;&amp;emsp;我们先讲单调队列在干嘛。&amp;emsp;&amp;emsp;数列为：6 4 10 10 8 6 4 2 12 14，N=10,K=3;我们要构造一个长度为K的单调递减队列：&amp;emsp;&amp;emsp;首先，将6和它的位置0放入队列中，用（6，10）表示，每一步变化如下：插入6：(6,0);插入4：(6,0),(4,1);插入10：(10,2);插入第二个10，保留后面那个：(10,">
 
 
 
@@ -120,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/02/Markdown/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/11/单调队列/">
 
 
 
 
 
-  <title>Markdown语法笔记 | Hexo</title>
+  <title>单调队列 | Hexo</title>
   
 
 
@@ -263,7 +260,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/02/Markdown/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/11/单调队列/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feng Yang">
@@ -280,7 +277,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown语法笔记</h1>
+          <h1 class="post-title" itemprop="name headline">单调队列</h1>
         
 
         <div class="post-meta">
@@ -292,8 +289,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-02T16:58:49+08:00">
-                2019-04-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-11T20:37:40+08:00">
+                2019-04-11
               </time>
             
 
@@ -315,8 +312,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/123123/" itemprop="url" rel="index">
-                    <span itemprop="name">123123</span>
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
                   </a>
                 </span>
 
@@ -332,7 +329,7 @@
 
           
           
-             <span id="/2019/04/02/Markdown/" class="leancloud_visitors" data-flag-title="Markdown语法笔记">
+             <span id="/2019/04/11/单调队列/" class="leancloud_visitors" data-flag-title="单调队列">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,38 +366,10 @@
       
 
       
-        <h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-TOC生成目录"><a href="#2-TOC生成目录" class="headerlink" title="2.TOC生成目录"></a>2.TOC生成目录</h2><p>注：根据标题生成目录</p>
-<p>[TOC]</p>
-<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h2><p>单行式：</p>
-<blockquote>
-<p>hello world</p>
-</blockquote>
-<p>多行式：</p>
-<blockquote>
-<p>hello world!<br>hello world!<br>hello world!</p>
-</blockquote>
-<p>多层嵌套:</p>
-<blockquote>
-<p>aaaaaaaaa</p>
-<blockquote>
-<p>bbbbbbbbb</p>
-<blockquote>
-<p>cccccccccc</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="4-行内标记"><a href="#4-行内标记" class="headerlink" title="4.行内标记"></a>4.行内标记</h2><p>eg: 标记外<code>标记内</code>标记外</p>
-<h2 id="5-代码块"><a href="#5-代码块" class="headerlink" title="5.代码块"></a>5.代码块</h2><p>注：使用三个撇号在第一行和最后一行包围代码块,标注代码块使用的程序语言可以给代码显示语法高亮。单行代码用行内标记实现。</p>
-<p>`单行代码: cout&lt;&lt;”hello world”&lt;&lt;endl;</p>
-<h2 id="7-插入链接"><a href="#7-插入链接" class="headerlink" title="7.插入链接"></a>7.插入链接</h2><!-- [链接文字](链接地址 "链接标题") -->
-<p>内链式：</p>
-<p><a href="http://www.baidu.com/" target="_blank" rel="noopener">百度1</a></p>
-<h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><!-- 注：方括号中的文字是图片地址错误是的提示文字，也就是alt的属性值 -->
-<p>内链式：</p>
-<p><img src="imgs/girl1.png" alt="漂亮女孩"></p>
-<p><img src="imgs/main.png" alt="main"></p>
-
+        <h2 id="1-例子"><a href="#1-例子" class="headerlink" title="1.例子"></a>1.例子</h2><p>&emsp;&emsp;我们先讲单调队列在干嘛。<br>&emsp;&emsp;数列为：6 4 10 10 8 6 4 2 12 14，N=10,K=3;我们要构造一个长度为K的单调递减队列：<br>&emsp;&emsp;首先，将6和它的位置0放入队列中，用（6，10）表示，每一步变化如下：<br>插入6：(6,0);<br>插入4：(6,0),(4,1);<br>插入10：(10,2);<br>插入第二个10，保留后面那个：(10,3);<br>插入8：(10,3),(8,4);<br>插入6：(10,3),(8,4),(6,5);<br>插入4，之前的10已经超出范围所以排掉：(8,4),(6,5),(4,6);<br>插入2，同理：(6,5),(4,6),(2,7);<br>插入12：(12,8);<br>插入14：(14,9);<br>那么f(i)就是第i步时队列当中的首元素：6,6,10,10,10,10,8,6,12,14<br>&emsp;&emsp;单调递减队列是这么一个队列（首元素最大，单调递增队列则相反），它的头元素一直是队列当中的最大值，而且队列中的值是按照递减的顺序排列的。我们可以从队列的末尾插入一个元素，可以从队列的两端删除元素。(双端队列)<br>&emsp;&emsp;单调队列的操作：<br>&emsp;&emsp;1.若队列为空，将A[i]从队尾入队<br>&emsp;&emsp;2.若队列不为空，将比A[i]小或等的元素都从队尾弹出，然后把A[i]入队<br>&emsp;&emsp;3.若队列不为空且A[i]小于队尾，则直接从队尾把A[i]入队<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="comment">(q.empty()</span>)</span><br><span class="line">  q.push_back<span class="comment">(A[i])</span>;</span><br><span class="line">else <span class="keyword">if</span><span class="comment">(q.back()</span>&lt;=A[i])&#123;</span><br><span class="line">  <span class="keyword">while</span><span class="comment">((!q.empty()</span>)&amp;&amp;q.back<span class="comment">()</span>&lt;=A[i])&#123;</span><br><span class="line">    q.pop_back<span class="comment">()</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  q.push_back<span class="comment">(A[i])</span>;</span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">  q.push_back<span class="comment">(A[i])</span>;</span><br></pre></td></tr></table></figure></p>
+<p>[注]：上面是单减队列，单增队列则相反</p>
+<h2 id="2-例题"><a href="#2-例题" class="headerlink" title="2.例题"></a>2.例题</h2><p>Description:<br>&emsp;&emsp;烽火台又称烽燧，是重要的军事防御设施，一般建在险要或交通要道上。一旦有敌情发生，白天燃烧柴草，定代价。<br>&emsp;&emsp;为了使情报准确地传递，在连续m个烽火台中至少要有一个发出信号。请计算总共最少花费多少代价，才能使敌军来袭之时，情报能在这两座城市之间准确传递。<br>Input:<br>&emsp;&emsp;第一行：两个整数N，M。其中N表示烽火台的个数，M表示在连续m个烽火台中至少要有一个发出信号。<br>&emsp;&emsp;接下来N行，每行一个数Wi，表示第i个烽火台发出信号所需代价。<br>Sample Input:<br>5 3<br>1<br>2<br>5<br>6<br>2<br>Sample Output:<br>4<br><br><br><br><br>Analyse:<br>&emsp;&emsp;设f[i]表示i必须选时最小代价。<br>&emsp;&emsp;初值： f[0]=0 f[1..n]=∞<br>&emsp;&emsp;方程： f[i]=min(f[j])+w[i]并且max(0,i-m)≤j＜i<br>&emsp;&emsp;最后在f[n-m+1..n]中取最小值即答案,时间复杂度O(nm)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">int</span> w[<span class="number">100001</span>];</span><br><span class="line"><span class="keyword">int</span> que[<span class="number">100001</span>],head=<span class="number">0</span>,tail=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> f[<span class="number">100001</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;w[i]);</span><br><span class="line">    <span class="built_in">memset</span>(f,<span class="number">127</span>,<span class="keyword">sizeof</span> f);<span class="comment">//初始化无限大</span></span><br><span class="line">    f[<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">    que[<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (que[head]&lt;i-m)</span><br><span class="line">            ++head;<span class="comment">//将超出范围的队头删掉</span></span><br><span class="line">        f[i]=f[que[head]]+w[i];<span class="comment">//转移（用队头）</span></span><br><span class="line">        <span class="keyword">while</span> (head&lt;=tail &amp;&amp; f[que[tail]]&gt;f[i])</span><br><span class="line">            --tail;<span class="comment">//将不比它优的全部删掉</span></span><br><span class="line">        que[++tail]=i;<span class="comment">//将它加进队尾</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">0x7f7f7f7f</span>;</span><br><span class="line">    <span class="keyword">for</span> (i=n-m+<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">        ans=min(ans,f[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -433,15 +402,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/07/动态规划--初级/" rel="next" title="动态规划--初级">
+                <i class="fa fa-chevron-left"></i> 动态规划--初级
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/07/动态规划--初级/" rel="prev" title="动态规划--初级">
-                动态规划--初级 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -614,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标题"><span class="nav-number">1.</span> <span class="nav-text">1.标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">2.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">2.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-TOC生成目录"><span class="nav-number">3.</span> <span class="nav-text">2.TOC生成目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-引用"><span class="nav-number">4.</span> <span class="nav-text">3.引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-行内标记"><span class="nav-number">5.</span> <span class="nav-text">4.行内标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-代码块"><span class="nav-number">6.</span> <span class="nav-text">5.代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-插入链接"><span class="nav-number">7.</span> <span class="nav-text">7.插入链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-插入图片"><span class="nav-number">8.</span> <span class="nav-text">8.插入图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-例子"><span class="nav-number">1.</span> <span class="nav-text">1.例子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-例题"><span class="nav-number">2.</span> <span class="nav-text">2.例题</span></a></li></ol></div>
             
 
           </div>
