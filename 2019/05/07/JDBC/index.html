@@ -77,20 +77,17 @@
 
 
 
-<meta name="description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta name="description" content="1.JDBC API做的三件事情主要是通过以下类/接口实现：  DriverManager 管理jdbc驱动Connection  连接(通过DriverManager产生)Statement(PreparedStatement)  增删改查(通过Connection产生)CallableStatement  调用数据库中的存储过程/存储函数(通过Connnection产生)Result 返回的结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法笔记">
-<meta property="og:url" content="http://yoursite.com/2019/04/02/Markdown/index.html">
+<meta property="og:title" content="JDBC">
+<meta property="og:url" content="http://yoursite.com/2019/05/07/JDBC/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta property="og:description" content="1.JDBC API做的三件事情主要是通过以下类/接口实现：  DriverManager 管理jdbc驱动Connection  连接(通过DriverManager产生)Statement(PreparedStatement)  增删改查(通过Connection产生)CallableStatement  调用数据库中的存储过程/存储函数(通过Connnection产生)Result 返回的结">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/02/Markdown/imgs/girl1.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/02/Markdown/imgs/main.png">
-<meta property="og:updated_time" content="2019-04-02T08:58:49.020Z">
+<meta property="og:updated_time" content="2019-05-07T12:09:29.369Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法笔记">
-<meta name="twitter:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/02/Markdown/imgs/girl1.png">
+<meta name="twitter:title" content="JDBC">
+<meta name="twitter:description" content="1.JDBC API做的三件事情主要是通过以下类/接口实现：  DriverManager 管理jdbc驱动Connection  连接(通过DriverManager产生)Statement(PreparedStatement)  增删改查(通过Connection产生)CallableStatement  调用数据库中的存储过程/存储函数(通过Connnection产生)Result 返回的结">
 
 
 
@@ -120,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/02/Markdown/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/07/JDBC/">
 
 
 
 
 
-  <title>Markdown语法笔记 | Hexo</title>
+  <title>JDBC | Hexo</title>
   
 
 
@@ -263,7 +260,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/02/Markdown/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/JDBC/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feng Yang">
@@ -280,7 +277,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown语法笔记</h1>
+          <h1 class="post-title" itemprop="name headline">JDBC</h1>
         
 
         <div class="post-meta">
@@ -292,8 +289,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-02T16:58:49+08:00">
-                2019-04-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-07T20:10:37+08:00">
+                2019-05-07
               </time>
             
 
@@ -315,8 +312,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/123123/" itemprop="url" rel="index">
-                    <span itemprop="name">123123</span>
+                  <a href="/categories/JAVAWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JAVAWeb</span>
                   </a>
                 </span>
 
@@ -332,7 +329,7 @@
 
           
           
-             <span id="/2019/04/02/Markdown/" class="leancloud_visitors" data-flag-title="Markdown语法笔记">
+             <span id="/2019/05/07/JDBC/" class="leancloud_visitors" data-flag-title="JDBC">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,37 +366,60 @@
       
 
       
-        <h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-TOC生成目录"><a href="#2-TOC生成目录" class="headerlink" title="2.TOC生成目录"></a>2.TOC生成目录</h2><p>注：根据标题生成目录</p>
-<p>[TOC]</p>
-<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h2><p>单行式：</p>
+        <h2 id="1-JDBC-API"><a href="#1-JDBC-API" class="headerlink" title="1.JDBC API"></a>1.JDBC API</h2><p>做的三件事情主要是通过以下类/接口实现：</p>
 <blockquote>
-<p>hello world</p>
+<p>DriverManager 管理jdbc驱动<br>Connection  连接(通过DriverManager产生)<br>Statement(PreparedStatement)  增删改查(通过Connection产生)<br>CallableStatement  调用数据库中的存储过程/存储函数(通过Connnection产生)<br>Result 返回的结果集(通过上面的Statement等产生)</p>
 </blockquote>
-<p>多行式：</p>
+<p>方法简介：<br>Connection 产生操作数据库对象：</p>
 <blockquote>
-<p>hello world!<br>hello world!<br>hello world!</p>
+<p>Connnection产生Statement对象：createStatement()<br>Connnection产生PreparedStatement对象：prepareStatement()<br>Connnection产生CallableStatement对象：prepareCall()</p>
 </blockquote>
-<p>多层嵌套:</p>
-<blockquote>
-<p>aaaaaaaaa</p>
-<blockquote>
-<p>bbbbbbbbb</p>
-<blockquote>
-<p>cccccccccc</p>
+<p>Statement操作数据库：<br>增删改：executeUpdate()<br>查询：executeQuery()</p>
+<p>ResultSet:保存结果集 select * from xxx<br>next()：判断下一行是否有数据（true/false）<br>getXXX(字段名|位置)：获取具体的字段值</p>
+<p>PreparedStatement操作数据库:<br>因为public interface PreparedStatement extends Statement<br>因此<br>增删改：executeUpdate()<br>查询：executeQuery()<br>赋值操作：setXXX()</p>
+<p>PreparedStatement与Statement在使用时的区别：<br>1.Statement<br>写String sql=”xxx”;<br>之后executeUpdate(sql)<br>2.PreparedStatement<br>在String sql=”xxx”中可能存在占位符?（在创建PreparedStatement时，将sql预编译）<br>executeUpdate()<br>SetXXX()替换占位符?(两个参数，第一个用1234表示第几个?；第二个则是对应的值，数字就直接写，字符串加双引号)<br><br><br>推荐使用PreparedStatement原因如下：<br>1.编码更加简便(虽然代码长点，但是避免了字符串拼接)<br><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> name=<span class="string">"zs"</span>;</span><br><span class="line"><span class="built_in">int</span> age=<span class="number">23</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//stmt:(stmt要先创建为null)</span></span><br><span class="line"><span class="built_in">String</span> sql=<span class="string">"insert into student(stuno,stuname) values('"</span>+name+<span class="string">"',"</span>+age+<span class="string">")"</span>;<span class="comment">//字符串拼接</span></span><br><span class="line">stmt.executeUpdate(sql);</span><br><span class="line"></span><br><span class="line">pstmt:(也要先创建为<span class="keyword">null</span>)</span><br><span class="line"><span class="built_in">String</span> sql=<span class="string">"insert into student(stuno,stuname) values(?,?)"</span>;</span><br><span class="line">pstmt=connection.preparedStatement(sql);<span class="comment">//预编译SQL</span></span><br><span class="line">pstmt.setString(<span class="number">1</span>,name);</span><br><span class="line">pstmt.setInt(<span class="number">2</span>,age);</span><br></pre></td></tr></table></figure></p>
+<p>2.提高性能（因为预编译）<br>3.安全（可以有效地防止sql注入）</p>
+<h2 id="2-JDBC访问数据库的具体步骤"><a href="#2-JDBC访问数据库的具体步骤" class="headerlink" title="2.JDBC访问数据库的具体步骤"></a>2.JDBC访问数据库的具体步骤</h2><blockquote>
+<p>a.导入驱动，加载具体的驱动类(eclipse里面先把jar包复制过来，再buildpath):<br>Class.forName(“具体驱动类”);<br>b.与数据库建立连接:<br>Connection connection=DriverManager.getConnection(“连接字符串”,”用户名”,”密码”);<br>c.发送sql，执行sql命令(增删改、查)：<br>Statement stmt=connection.createStatement();<br>String sql=”xxxx”;(按照表的属性来写,自己写代码主要是改这个sql，其他的都是模板)<br>int count=stmt.executeUpdate(sql);//返回值表示增删改几条数据;如果是查询，则是executeQuery,同时返回的不是一个数，而是结果集<br>//ResultSet<br>//最后记得关闭一下<br>if(stmt!=null) stmt.close();<br>if(connection!=null) connection.close();//先开的后关<br>d.处理结果集（需要查询时）</p>
 </blockquote>
-</blockquote>
-</blockquote>
-<h2 id="4-行内标记"><a href="#4-行内标记" class="headerlink" title="4.行内标记"></a>4.行内标记</h2><p>eg: 标记外<code>标记内</code>标记外</p>
-<h2 id="5-代码块"><a href="#5-代码块" class="headerlink" title="5.代码块"></a>5.代码块</h2><p>注：使用三个撇号在第一行和最后一行包围代码块,标注代码块使用的程序语言可以给代码显示语法高亮。单行代码用行内标记实现。</p>
-<p>`单行代码: cout&lt;&lt;”hello world”&lt;&lt;endl;</p>
-<h2 id="7-插入链接"><a href="#7-插入链接" class="headerlink" title="7.插入链接"></a>7.插入链接</h2><!-- [链接文字](链接地址 "链接标题") -->
-<p>内链式：</p>
-<p><a href="http://www.baidu.com/" target="_blank" rel="noopener">百度1</a></p>
-<h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><!-- 注：方括号中的文字是图片地址错误是的提示文字，也就是alt的属性值 -->
-<p>内链式：</p>
-<p><img src="/2019/04/02/Markdown/imgs/girl1.png" alt="漂亮女孩"></p>
-<p><img src="/2019/04/02/Markdown/imgs/main.png" alt="main"></p>
+<h2 id="3-数据库驱动"><a href="#3-数据库驱动" class="headerlink" title="3.数据库驱动"></a>3.数据库驱动</h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">驱动jar</th>
+<th style="text-align:center">具体驱动类</th>
+<th style="text-align:center">连接字符串(数据库名:IP+端口号)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Oracle</td>
+<td style="text-align:center">ojdbc-x.jar</td>
+<td style="text-align:center">oracle.jdbc.OracleDriver</td>
+<td style="text-align:center">jdbc:oracle:thin:@localhost:1521:ORCL</td>
+</tr>
+<tr>
+<td style="text-align:center">MySQL</td>
+<td style="text-align:center">mysql-connector-java-x.jar</td>
+<td style="text-align:center">com.mysql.jdbc.Driver</td>
+<td style="text-align:center">jdbc:mysql://localhost:3306/数据库实例名</td>
+</tr>
+<tr>
+<td style="text-align:center">SQLServer</td>
+<td style="text-align:center">sqljdbc-x.jar</td>
+<td style="text-align:center">com.microsoft.sqlserver.jdbc.SQLServerDriver</td>
+<td style="text-align:center">jdbc:microsoft:sqlserver:localhost:1433;databasename=数据库实例名</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-JDBC总结（模板）"><a href="#4-JDBC总结（模板）" class="headerlink" title="4.JDBC总结（模板）"></a>4.JDBC总结（模板）</h2><h4 id="1-模板："><a href="#1-模板：" class="headerlink" title="1.模板："></a>1.模板：</h4><figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">a.导入驱动包，加载具体驱动类<span class="type">Class</span>.forName(<span class="string">"具体驱动类"</span>)</span><br><span class="line">b.与数据库建立连接</span><br><span class="line">connection=<span class="type">DriverManager</span>.getConnection(...)</span><br><span class="line">c.通过connection，获取操作数据库的对象（<span class="type">Statement</span>\preparedStatement\callablestatement）</span><br><span class="line"><span class="built_in">stmt</span>=connection.createStatement()</span><br><span class="line">d.(查询)处理结果集rs=pstmt.executeQuery()</span><br><span class="line"><span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">    rs.getXxx(..);&#125;</span><br><span class="line">&#125;catch(<span class="type">ClassNotFoundException</span> e)<span class="meta">&#123;...&#125;</span></span><br><span class="line">catch(<span class="type">SQLException</span> e)<span class="meta">&#123;...&#125;</span></span><br><span class="line">catch(<span class="type">Exception</span> e)<span class="meta">&#123;...&#125;</span></span><br><span class="line"><span class="keyword">finally</span>&#123;</span><br><span class="line">    //打开顺序与关闭顺序相反</span><br><span class="line">    <span class="keyword">if</span>(rs!=null) rs.close();</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">stmt</span>!=null) <span class="built_in">stmt</span>.close();</span><br><span class="line">    <span class="keyword">if</span>(connection!=null) connection.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>[注]: JDBC中，除了Class.forName() 抛出ClassNotFoundException,其余方法都抛SQLException<br><br></p>
+<h4 id="2-JSP访问数据库"><a href="#2-JSP访问数据库" class="headerlink" title="2.JSP访问数据库"></a>2.JSP访问数据库</h4><p>&emsp;JSP就是在html中嵌套JAVA代码，因此JAVA代码可以直接写在JSP里（&lt;%…%&gt;）<br>&emsp;导包操作<br>&emsp;&emsp;&emsp;JAVA项目：1.JAR包复制到工程中；2.右键该JAR：build path-&gt;add to buile path<br>&emsp;&emsp;&emsp;Web项目：JAR包复制到WEB-INF中lib即可<br>&emsp;核心：就是把JAVA中JDBC代码复制到JSP的&lt;%..%&gt;中<br>[注]: 如果JSP出现：XXX import is not resolved …<br>尝试解决步骤：<br>&emsp;a.可能是tomcat、jdk版本问题：右键项目-&gt;build path，将其中报错的library或lib删除后重新导入<br>&emsp;b.情空各种缓存：右键项目-&gt;clean tomcat… （project-&gt;clean或进tomcat目录删除里面work的子目录）<br>&emsp;c.删除之前的tomcat，重新解压缩、配置tomcat重启电脑<br>&emsp;d.把java类放到包里面（新建一个），然后在JSP里面导包</p>
+<p><br></p>
+<h4 id="3-JAVABean（一个JAVA类）"><a href="#3-JAVABean（一个JAVA类）" class="headerlink" title="3.JAVABean（一个JAVA类）"></a>3.JAVABean（一个JAVA类）</h4><p>&emsp;将JSP里面登陆操作的代码，转移到了java文件中，其中的LoginDao.java就叫JAVABean</p>
+<p>JAVABean的作用：提高代码复用、减轻JSP复杂度</p>
+<p>JAVABean的定义：public修饰的类，public无参构造以及所有属性（有的话）都是private，并且提供set/get（如果是Boolean类型，则get可以换成is）</p>
+<p>使用层面JAVABean分为两类:<br>&emsp;a.封装业务逻辑的JAVABean(LoginDao.java封装了登陆逻辑)<br>&emsp;&emsp;&emsp;可以将JSP中的JDBC代码封装到Login.java类中<br>&emsp;b.封装数据的JAVABean（实体类、Student.java、Person.java）<br>&emsp;&emsp;&emsp;对应于数据库中的一张表<br>&emsp;&emsp;&emsp;Login login=new Login(uname,wpwd);//即用Login对象封装了2个数据（用户名和密码）<br>封装数据的JAVABean对应于数据库中一张表：Login(name,pwd)<br>封装业务逻辑的JAVABean用于操作一个封装数据的JavaBean</p>
 
       
     </div>
@@ -433,14 +453,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/03/JSP/" rel="next" title="JSP">
+                <i class="fa fa-chevron-left"></i> JSP
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/07/动态规划--初级/" rel="prev" title="动态规划--初级">
-                动态规划--初级 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/07/MVC&Servlet/" rel="prev" title="MVC&Servlet">
+                MVC&Servlet <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -518,7 +542,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -595,6 +619,14 @@
                     <a href="https://www.cnblogs.com/kuangbin/" title="邝斌" target="_blank">邝斌</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.liuchuo.net/" title="柳婼女神" target="_blank">柳婼女神</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/qq_41117236" title="ZJU算法大神" target="_blank">ZJU算法大神</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -614,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标题"><span class="nav-number">1.</span> <span class="nav-text">1.标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">2.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">2.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-TOC生成目录"><span class="nav-number">3.</span> <span class="nav-text">2.TOC生成目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-引用"><span class="nav-number">4.</span> <span class="nav-text">3.引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-行内标记"><span class="nav-number">5.</span> <span class="nav-text">4.行内标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-代码块"><span class="nav-number">6.</span> <span class="nav-text">5.代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-插入链接"><span class="nav-number">7.</span> <span class="nav-text">7.插入链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-插入图片"><span class="nav-number">8.</span> <span class="nav-text">8.插入图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JDBC-API"><span class="nav-number">1.</span> <span class="nav-text">1.JDBC API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JDBC访问数据库的具体步骤"><span class="nav-number">2.</span> <span class="nav-text">2.JDBC访问数据库的具体步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-数据库驱动"><span class="nav-number">3.</span> <span class="nav-text">3.数据库驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-JDBC总结（模板）"><span class="nav-number">4.</span> <span class="nav-text">4.JDBC总结（模板）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-模板："><span class="nav-number">4.0.1.</span> <span class="nav-text">1.模板：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-JSP访问数据库"><span class="nav-number">4.0.2.</span> <span class="nav-text">2.JSP访问数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-JAVABean（一个JAVA类）"><span class="nav-number">4.0.3.</span> <span class="nav-text">3.JAVABean（一个JAVA类）</span></a></li></ol></li></ol></div>
             
 
           </div>
