@@ -77,20 +77,19 @@
 
 
 
-<meta name="description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta name="description" content="快速幂与快速幂取模+简单例题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法笔记">
-<meta property="og:url" content="http://yoursite.com/2019/05/07/Markdown/index.html">
+<meta property="og:title" content="快速幂">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/快速幂/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta property="og:description" content="快速幂与快速幂取模+简单例题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/05/07/Markdown/girl1.png">
-<meta property="og:image" content="http://yoursite.com/2019/05/07/Markdown/main.png">
-<meta property="og:updated_time" content="2019-04-17T04:17:19.070Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/14/快速幂/poww.jpg">
+<meta property="og:updated_time" content="2019-05-13T01:16:20.086Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法笔记">
-<meta name="twitter:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/07/Markdown/girl1.png">
+<meta name="twitter:title" content="快速幂">
+<meta name="twitter:description" content="快速幂与快速幂取模+简单例题">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/14/快速幂/poww.jpg">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/07/Markdown/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/快速幂/">
 
 
 
 
 
-  <title>Markdown语法笔记 | Hexo</title>
+  <title>快速幂 | Hexo</title>
   
 
 
@@ -263,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/Markdown/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/快速幂/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feng Yang">
@@ -280,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown语法笔记</h1>
+          <h1 class="post-title" itemprop="name headline">快速幂</h1>
         
 
         <div class="post-meta">
@@ -292,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-07T20:18:02+08:00">
-                2019-05-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-14T13:54:33+08:00">
+                2019-05-14
               </time>
             
 
@@ -315,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/123123/" itemprop="url" rel="index">
-                    <span itemprop="name">123123</span>
+                  <a href="/categories/数据结构与算法/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构与算法</span>
                   </a>
                 </span>
 
@@ -332,7 +331,7 @@
 
           
           
-             <span id="/2019/05/07/Markdown/" class="leancloud_visitors" data-flag-title="Markdown语法笔记">
+             <span id="/2019/05/14/快速幂/" class="leancloud_visitors" data-flag-title="快速幂">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,37 +368,18 @@
       
 
       
-        <h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-TOC生成目录"><a href="#2-TOC生成目录" class="headerlink" title="2.TOC生成目录"></a>2.TOC生成目录</h2><p>注：根据标题生成目录</p>
-<p>[TOC]</p>
-<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h2><p>单行式：</p>
-<blockquote>
-<p>hello world</p>
-</blockquote>
-<p>多行式：</p>
-<blockquote>
-<p>hello world!<br>hello world!<br>hello world!</p>
-</blockquote>
-<p>多层嵌套:</p>
-<blockquote>
-<p>aaaaaaaaa</p>
-<blockquote>
-<p>bbbbbbbbb</p>
-<blockquote>
-<p>cccccccccc</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="4-行内标记"><a href="#4-行内标记" class="headerlink" title="4.行内标记"></a>4.行内标记</h2><p>eg: 标记外<code>标记内</code>标记外</p>
-<h2 id="5-代码块"><a href="#5-代码块" class="headerlink" title="5.代码块"></a>5.代码块</h2><p>注：使用三个撇号在第一行和最后一行包围代码块,标注代码块使用的程序语言可以给代码显示语法高亮。单行代码用行内标记实现。</p>
-<p>`单行代码: cout&lt;&lt;”hello world”&lt;&lt;endl;</p>
-<h2 id="7-插入链接"><a href="#7-插入链接" class="headerlink" title="7.插入链接"></a>7.插入链接</h2><!-- [链接文字](链接地址 "链接标题") -->
-<p>内链式：</p>
-<p><a href="http://www.baidu.com/" target="_blank" rel="noopener">百度1</a></p>
-<h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><!-- 注：方括号中的文字是图片地址错误是的提示文字，也就是alt的属性值 -->
-<p>内链式：</p>
-<p><img src="/2019/05/07/Markdown/girl1.png" alt="漂亮女孩"></p>
-<p><img src="/2019/05/07/Markdown/main.png" alt="main"></p>
+        <p>快速幂与快速幂取模+简单例题<br><a id="more"></a></p>
+<h2 id="算法讲解"><a href="#算法讲解" class="headerlink" title="算法讲解"></a>算法讲解</h2><h4 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h4><p>对于$a^{b}$,假设为$2^{10}$<br>将10写成2进制：$1<em>2^{3}+0</em>2^{2}+1<em>2^{1}+0</em>2^{0}$<br>那么$2^{10}=2^{1<em>2^{3}+0</em>2^{2}+1<em>2^{1}+0</em>2^{0}}=2^{2^{1}}*2^{2^{3}}$</p>
+<p>不管权值是0还是1，算法中2的多少次方是需要不断累加的，前面乘以0或1表示这个数要不要（任何一个数都可以由若干个2的多少次方组成）</p>
+<p>b &amp; 1，也就是将b与1按位与，因为1的二进制是1，也就是说b除了最后一位，其他位都和0相与，那么得到的值一定都是0。而最后一位与上1，那么原来位实际上是不变的。这样我们就获得了b的最后一位的值。<br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ll </span>poww(<span class="keyword">ll </span>a,<span class="keyword">ll </span><span class="keyword">b)&#123;//快速幂 </span></span><br><span class="line">	<span class="keyword">ll </span>ans=<span class="number">1</span><span class="comment">;</span></span><br><span class="line">	<span class="keyword">ll </span><span class="keyword">base=a;</span></span><br><span class="line"><span class="keyword">	</span>while(<span class="keyword">b)&#123;</span></span><br><span class="line"><span class="keyword">	</span>	if(<span class="keyword">b&amp;1)</span></span><br><span class="line"><span class="keyword">	</span>		ans*=<span class="keyword">base;</span></span><br><span class="line"><span class="keyword">	</span>	<span class="keyword">base*=base;</span></span><br><span class="line"><span class="keyword">	</span>	<span class="keyword">b&gt;&gt;=1;</span></span><br><span class="line"><span class="keyword">	</span>&#125;</span><br><span class="line">	return ans<span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果还没懂就看下面的图<br><img src="/2019/05/14/快速幂/poww.jpg" alt="快速幂"></p>
+<h4 id="快速幂取模"><a href="#快速幂取模" class="headerlink" title="快速幂取模"></a>快速幂取模</h4><p>原理一样的，直接放代码<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ll <span class="title">poww_mod</span>(<span class="params">ll a,ll b,ll c</span>)</span>&#123;<span class="comment">//快速幂取模 </span></span><br><span class="line">	ll ans=<span class="number">1</span>;</span><br><span class="line">	ll <span class="keyword">base</span>=a%c;</span><br><span class="line">	<span class="keyword">while</span>(b)&#123;</span><br><span class="line">		<span class="keyword">if</span>(b&amp;<span class="number">1</span>)</span><br><span class="line">			ans=(ans*<span class="keyword">base</span>)%c;</span><br><span class="line">		<span class="keyword">base</span>=(<span class="keyword">base</span>*<span class="keyword">base</span>)%c;</span><br><span class="line">		b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="例题（水题）"><a href="#例题（水题）" class="headerlink" title="例题（水题）"></a>例题（水题）</h2><p><a href="http://codevs.cn/problem/3285/" target="_blank" rel="noopener">codevs 3285转圈游戏</a><br>题目描述 Description<br>n 个小伙伴（编号从 0 到 n-1）围坐一圈玩游戏。按照顺时针方向给 n 个位置编号，从0 到 n-1。最初，第 0 号小伙伴在第 0 号位置，第 1 号小伙伴在第 1 号位置，……，依此类推。<br>游戏规则如下：每一轮第 0 号位置上的小伙伴顺时针走到第 m 号位置，第 1 号位置小伙伴走到第 m+1 号位置，……，依此类推，第n - m号位置上的小伙伴走到第 0 号位置，第n-m+1 号位置上的小伙伴走到第 1 号位置，……，第 n-1 号位置上的小伙伴顺时针走到第m-1 号位置。<br>现在，一共进行了 10^k 轮，请问 x 号小伙伴最后走到了第几号位置。</p>
+<p>输入描述 Input Description<br>输入共 1 行，包含 4 个整数 n、m、k、x，每两个整数之间用一个空格隔开。</p>
+<p>输出描述 Output Description<br>输出共 1 行，包含 1 个整数，表示 10^k 轮后 x 号小伙伴所在的位置编号。</p>
+<p>样例输入 Sample Input<br>10 3 4 5</p>
+<p>样例输出 Sample Output<br>5</p>
+<p>数据范围及提示 Data Size &amp; Hint<br>对于 30%的数据，0 &lt; k &lt; 7；<br>对于 80%的数据，0 &lt; k &lt; 10^7；<br>对于 100%的数据，1 &lt; n &lt; 1,000,000，0 &lt; m &lt; n，1 &lt;= x &lt;=n，0 &lt; k &lt; 10^9。<br><br><br>分析：<br>垃圾题，WA一发是因为不小心把mod写成了n-1<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line">ll n,m,k,x;</span><br><span class="line"><span class="function">ll <span class="title">poww</span><span class="params">(ll a,ll b)</span></span>&#123;<span class="comment">//快速幂 </span></span><br><span class="line">	ll ans=<span class="number">1</span>;</span><br><span class="line">	ll base=a;</span><br><span class="line">	<span class="keyword">while</span>(b)&#123;</span><br><span class="line">		<span class="keyword">if</span>(b&amp;<span class="number">1</span>)</span><br><span class="line">			ans*=base;</span><br><span class="line">		base*=base;</span><br><span class="line">		b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">poww_mod</span><span class="params">(ll a,ll b,ll c)</span></span>&#123;<span class="comment">//快速幂取模 </span></span><br><span class="line">	ll ans=<span class="number">1</span>;</span><br><span class="line">	ll base=a%c;</span><br><span class="line">	<span class="keyword">while</span>(b)&#123;</span><br><span class="line">		<span class="keyword">if</span>(b&amp;<span class="number">1</span>)</span><br><span class="line">			ans=(ans*base)%c;</span><br><span class="line">		base=(base*base)%c;</span><br><span class="line">		b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">   	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;k&gt;&gt;x;</span><br><span class="line">   	<span class="keyword">const</span> <span class="keyword">int</span> mod=n;</span><br><span class="line">	ll ans2=(poww_mod(<span class="number">10</span>,k,mod)*m)%mod;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;(x%mod+ans2)%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -433,8 +413,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/07/MVC&Servlet/" rel="next" title="MVC&Servlet">
-                <i class="fa fa-chevron-left"></i> MVC&Servlet
+              <a href="/2019/05/11/Dijkstra1/" rel="next" title="非负权单源最短路--Dijkstra">
+                <i class="fa fa-chevron-left"></i> 非负权单源最短路--Dijkstra
               </a>
             
           </div>
@@ -443,8 +423,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/08/D_stone/" rel="prev" title="Stone--基础">
-                Stone--基础 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/14/二分最小值最大/" rel="prev" title="二分--最大值最小、最小值最大">
+                二分--最大值最小、最小值最大 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -630,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标题"><span class="nav-number">1.</span> <span class="nav-text">1.标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">2.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">2.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-TOC生成目录"><span class="nav-number">3.</span> <span class="nav-text">2.TOC生成目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-引用"><span class="nav-number">4.</span> <span class="nav-text">3.引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-行内标记"><span class="nav-number">5.</span> <span class="nav-text">4.行内标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-代码块"><span class="nav-number">6.</span> <span class="nav-text">5.代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-插入链接"><span class="nav-number">7.</span> <span class="nav-text">7.插入链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-插入图片"><span class="nav-number">8.</span> <span class="nav-text">8.插入图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#算法讲解"><span class="nav-number">1.</span> <span class="nav-text">算法讲解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#快速幂"><span class="nav-number">1.0.1.</span> <span class="nav-text">快速幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快速幂取模"><span class="nav-number">1.0.2.</span> <span class="nav-text">快速幂取模</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#例题（水题）"><span class="nav-number">2.</span> <span class="nav-text">例题（水题）</span></a></li></div>
             
 
           </div>

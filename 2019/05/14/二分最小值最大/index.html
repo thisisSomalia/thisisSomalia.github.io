@@ -77,20 +77,17 @@
 
 
 
-<meta name="description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta name="description" content="安排房间传送门 Description在一条街道上面，有n个房间，第i个房间在x[i]的位置，现在要给m个人安排房间，如果他们住的太近，就会打架，所以我们需要找出一个距离，使任意两个人之间的最小距离尽可能的大，那么，这个最大的最小距离是多少呢？ Input第一行用空格分隔的两个整数n和m；第二行为n个用空格隔开的整数，表示位置x[i]。 Output输出仅一个整数，表示最大的最小距离值。 Samp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法笔记">
-<meta property="og:url" content="http://yoursite.com/2019/05/07/Markdown/index.html">
+<meta property="og:title" content="二分--最大值最小、最小值最大">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/二分最小值最大/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
+<meta property="og:description" content="安排房间传送门 Description在一条街道上面，有n个房间，第i个房间在x[i]的位置，现在要给m个人安排房间，如果他们住的太近，就会打架，所以我们需要找出一个距离，使任意两个人之间的最小距离尽可能的大，那么，这个最大的最小距离是多少呢？ Input第一行用空格分隔的两个整数n和m；第二行为n个用空格隔开的整数，表示位置x[i]。 Output输出仅一个整数，表示最大的最小距离值。 Samp">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/05/07/Markdown/girl1.png">
-<meta property="og:image" content="http://yoursite.com/2019/05/07/Markdown/main.png">
-<meta property="og:updated_time" content="2019-04-17T04:17:19.070Z">
+<meta property="og:updated_time" content="2019-05-14T05:53:58.733Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法笔记">
-<meta name="twitter:description" content="1.标题注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题 二级标题三级标题四级标题五级标题六级标题2.TOC生成目录注：根据标题生成目录 [TOC] 3.引用单行式：  hello world  多行式：  hello world!hello world!hello world!  多层嵌套:  aaaaaaaaa  bbbbbbbbb  cccccccccc    4.行内标记e">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/07/Markdown/girl1.png">
+<meta name="twitter:title" content="二分--最大值最小、最小值最大">
+<meta name="twitter:description" content="安排房间传送门 Description在一条街道上面，有n个房间，第i个房间在x[i]的位置，现在要给m个人安排房间，如果他们住的太近，就会打架，所以我们需要找出一个距离，使任意两个人之间的最小距离尽可能的大，那么，这个最大的最小距离是多少呢？ Input第一行用空格分隔的两个整数n和m；第二行为n个用空格隔开的整数，表示位置x[i]。 Output输出仅一个整数，表示最大的最小距离值。 Samp">
 
 
 
@@ -120,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/07/Markdown/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/二分最小值最大/">
 
 
 
 
 
-  <title>Markdown语法笔记 | Hexo</title>
+  <title>二分--最大值最小、最小值最大 | Hexo</title>
   
 
 
@@ -263,7 +260,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/Markdown/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/二分最小值最大/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feng Yang">
@@ -280,7 +277,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown语法笔记</h1>
+          <h1 class="post-title" itemprop="name headline">二分--最大值最小、最小值最大</h1>
         
 
         <div class="post-meta">
@@ -292,8 +289,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-07T20:18:02+08:00">
-                2019-05-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-14T13:54:49+08:00">
+                2019-05-14
               </time>
             
 
@@ -315,8 +312,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/123123/" itemprop="url" rel="index">
-                    <span itemprop="name">123123</span>
+                  <a href="/categories/数据结构与算法/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构与算法</span>
                   </a>
                 </span>
 
@@ -332,7 +329,7 @@
 
           
           
-             <span id="/2019/05/07/Markdown/" class="leancloud_visitors" data-flag-title="Markdown语法笔记">
+             <span id="/2019/05/14/二分最小值最大/" class="leancloud_visitors" data-flag-title="二分--最大值最小、最小值最大">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,38 +366,24 @@
       
 
       
-        <h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>注:标题行上下需要留有空行，#号后面需要留有空格，最小为6级标题</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-TOC生成目录"><a href="#2-TOC生成目录" class="headerlink" title="2.TOC生成目录"></a>2.TOC生成目录</h2><p>注：根据标题生成目录</p>
-<p>[TOC]</p>
-<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h2><p>单行式：</p>
+        <h2 id="安排房间"><a href="#安排房间" class="headerlink" title="安排房间"></a>安排房间</h2><p><a href="http://oj.ctgu.work/contest/17/problem/A" target="_blank" rel="noopener">传送门</a></p>
+<p>Description<br>在一条街道上面，有n个房间，第i个房间在x[i]的位置，现在要给m个人安排房间，如果他们住的太近，就会打架，所以我们需要找出一个距离，使任意两个人之间的最小距离尽可能的大，那么，这个最大的最小距离是多少呢？</p>
+<p>Input<br>第一行用空格分隔的两个整数n和m；<br>第二行为n个用空格隔开的整数，表示位置x[i]。</p>
+<p>Output<br>输出仅一个整数，表示最大的最小距离值。</p>
+<p>Sample Input<br>5 3<br>1 2 8 4 9</p>
+<p>Sample Output<br>3</p>
+<p>Hint<br>如果安排 1 2 4 ，那么任意最近两个人的最小距离就是1 ， 如果安排1 4 8 ， 那么任意最近两个人的最小距离就是3.还有许多种安排方案，但是所有方案中最大的最小距离就是3</p>
+<p>分析：</p>
 <blockquote>
-<p>hello world</p>
+<p>&emsp;之前好像做过类似的题但是忘了，突然这么做有点不会，开始以为是dp。。。<br>&emsp;这个题是板子题。有一种理想的情况就是恰好分出的m个房间间距相等，这个时候也是最佳结果。但是实际情况不一定这样，所以能够更加接近这个最佳结果就好了。<br>&emsp;首先第一个房间肯定放第一个人。对l-&gt;r二分，然后判断每个值（表示假设当前值为最大距离），对于这个值，遍历n个人，每个人-前一个人（m个房间一个一个放，已经放入的最后一个）如果大于这个假设的当前最大值，就把当前这个人放到房间里面。如果房间数num大于m就return<br>judge是求最大的过程,二分是求最小的过程</p>
 </blockquote>
-<p>多行式：</p>
-<blockquote>
-<p>hello world!<br>hello world!<br>hello world!</p>
-</blockquote>
-<p>多层嵌套:</p>
-<blockquote>
-<p>aaaaaaaaa</p>
-<blockquote>
-<p>bbbbbbbbb</p>
-<blockquote>
-<p>cccccccccc</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="4-行内标记"><a href="#4-行内标记" class="headerlink" title="4.行内标记"></a>4.行内标记</h2><p>eg: 标记外<code>标记内</code>标记外</p>
-<h2 id="5-代码块"><a href="#5-代码块" class="headerlink" title="5.代码块"></a>5.代码块</h2><p>注：使用三个撇号在第一行和最后一行包围代码块,标注代码块使用的程序语言可以给代码显示语法高亮。单行代码用行内标记实现。</p>
-<p>`单行代码: cout&lt;&lt;”hello world”&lt;&lt;endl;</p>
-<h2 id="7-插入链接"><a href="#7-插入链接" class="headerlink" title="7.插入链接"></a>7.插入链接</h2><!-- [链接文字](链接地址 "链接标题") -->
-<p>内链式：</p>
-<p><a href="http://www.baidu.com/" target="_blank" rel="noopener">百度1</a></p>
-<h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><!-- 注：方括号中的文字是图片地址错误是的提示文字，也就是alt的属性值 -->
-<p>内链式：</p>
-<p><img src="/2019/05/07/Markdown/girl1.png" alt="漂亮女孩"></p>
-<p><img src="/2019/05/07/Markdown/main.png" alt="main"></p>
-
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">100000</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">judge</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num=<span class="number">1</span>,before=p[<span class="number">0</span>];<span class="comment">//第一个房间必须放第一个人</span></span><br><span class="line"><span class="comment">//before表示当前在m个房子里面已经放了人的最后一个人</span></span><br><span class="line"><span class="comment">//num表示目前已经放了人的房间数,一旦&gt;=m就要结束 </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)</span><br><span class="line">    	<span class="keyword">if</span>(p[i]-before&gt;=x)&#123;</span><br><span class="line">    		num++;before=p[i];</span><br><span class="line">    		<span class="keyword">if</span>(num&gt;=m)</span><br><span class="line">    			<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//若m个人距一样,则最大	</span></span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;p[i];</span><br><span class="line">	sort(p,p+n);</span><br><span class="line">	<span class="keyword">int</span> l=p[<span class="number">0</span>],r=p[n<span class="number">-1</span>];</span><br><span class="line"><span class="comment">//最开始按惯性思维把lr都当成下标了,这里表示房间距离 </span></span><br><span class="line">	<span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">		<span class="keyword">int</span> mid=(r-l)/<span class="number">2</span>+l;</span><br><span class="line">		<span class="keyword">if</span>(judge(mid)) </span><br><span class="line">			l=mid+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			r=mid<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;r;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="跳石头"><a href="#跳石头" class="headerlink" title="跳石头"></a>跳石头</h2><p><a href="http://codevs.cn/problem/4768/" target="_blank" rel="noopener">传送门</a><br>题目描述 Description<br>一年一度的“跳石头”比赛又要开始了！<br>这项比赛将在一条笔直的河道中进行，河道中分布着一些巨大岩石。组委会已经选择好了两块岩石作为比赛起点和终点。在起点和终点之间，有N块岩石（不含起点和终点的岩石）。在比赛过程中，选手们将从起点出发，每一步跳向相邻的岩石，直至到达终点。<br>为了提高比赛难度，组委会计划移走一些岩石，使得选手们在比赛过程中的最短跳跃距离尽可能长。由于预算限制，组委会至多从起点和终点之间移走M块岩石（不能移走起点和终点的岩石）。</p>
+<p>输入描述 Input Description<br>输入文件第一行包含三个整数L，N，M，分别表示起点到终点的距离，起点和终点之间的岩石数，以及组委会至多移走的岩石数。<br>接下来N行，每行一个整数，第i行的整数Di（0 &lt; Di &lt; L）表示第i块岩石与起点的距离。这些岩石按与起点距离从小到大的顺序给出，且不会有两个岩石出现在同一个位置。 </p>
+<p>输出描述 Output Description<br>输出文件只包含一个整数，即最短跳跃距离的最大值。</p>
+<p>样例输入 Sample Input<br>25 5 2<br>2<br>11<br>14<br>17<br>21<br>样例输出 Sample Output<br>4<br>数据范围及提示 Data Size &amp; Hint<br>对于20%的数据，0≤M≤N≤10。 对于50%的数据，0≤M≤N≤100。<br>对于50%的数据，0≤M≤N≤100。<br>对于100%的数据，0≤M≤N≤50,000，1≤L≤1,000,000,000。</p>
+<p>分析：<br>&emsp;如果两点之间的距离比最短距离短，那么就需要把这一块石头拿走，（因为不能比最短的还短）不然的话就可以不用管。用before防止移走该石头后下一个石头和当前石头的距离依然不满足要求</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> L,n,m;</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">50005</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">judge</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num=<span class="number">0</span>;<span class="comment">//移走的岩石数 </span></span><br><span class="line">    <span class="keyword">int</span> before=<span class="number">0</span>;<span class="comment">//上一个没有被抽走的石头离起点距离 </span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n+<span class="number">1</span>;i++)&#123;</span><br><span class="line">    	<span class="keyword">if</span>(p[i]-before&lt;x)<span class="comment">//该距离比最短距离还短 </span></span><br><span class="line">    		num++;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			before=p[i];</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="keyword">if</span>(num&gt;m)</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;L&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    	<span class="built_in">cin</span>&gt;&gt;p[i];</span><br><span class="line">    <span class="keyword">int</span> l=<span class="number">0</span>,r=L;</span><br><span class="line">    p[n]=L;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">    	<span class="keyword">int</span> mid=(r-l)/<span class="number">2</span>+l;</span><br><span class="line">    	<span class="keyword">if</span>(judge(mid))&#123;</span><br><span class="line">    		ans=mid;l=mid+<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">    	<span class="keyword">else</span></span><br><span class="line">    		r=mid<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans;<span class="comment">//不用ans写l-1也可以，这里为了直观 </span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -433,8 +416,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/07/MVC&Servlet/" rel="next" title="MVC&Servlet">
-                <i class="fa fa-chevron-left"></i> MVC&Servlet
+              <a href="/2019/05/14/快速幂/" rel="next" title="快速幂">
+                <i class="fa fa-chevron-left"></i> 快速幂
               </a>
             
           </div>
@@ -442,10 +425,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/08/D_stone/" rel="prev" title="Stone--基础">
-                Stone--基础 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -630,7 +609,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标题"><span class="nav-number">1.</span> <span class="nav-text">1.标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">2.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">2.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-TOC生成目录"><span class="nav-number">3.</span> <span class="nav-text">2.TOC生成目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-引用"><span class="nav-number">4.</span> <span class="nav-text">3.引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-行内标记"><span class="nav-number">5.</span> <span class="nav-text">4.行内标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-代码块"><span class="nav-number">6.</span> <span class="nav-text">5.代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-插入链接"><span class="nav-number">7.</span> <span class="nav-text">7.插入链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-插入图片"><span class="nav-number">8.</span> <span class="nav-text">8.插入图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安排房间"><span class="nav-number">1.</span> <span class="nav-text">安排房间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跳石头"><span class="nav-number">2.</span> <span class="nav-text">跳石头</span></a></li></ol></div>
             
 
           </div>
