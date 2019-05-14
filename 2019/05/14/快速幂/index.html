@@ -85,7 +85,7 @@
 <meta property="og:description" content="快速幂与快速幂取模+简单例题">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/05/14/快速幂/poww.jpg">
-<meta property="og:updated_time" content="2019-05-13T01:16:20.086Z">
+<meta property="og:updated_time" content="2019-05-14T06:38:26.087Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速幂">
 <meta name="twitter:description" content="快速幂与快速幂取模+简单例题">
@@ -369,7 +369,7 @@
 
       
         <p>快速幂与快速幂取模+简单例题<br><a id="more"></a></p>
-<h2 id="算法讲解"><a href="#算法讲解" class="headerlink" title="算法讲解"></a>算法讲解</h2><h4 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h4><p>对于$a^{b}$,假设为$2^{10}$<br>将10写成2进制：$1<em>2^{3}+0</em>2^{2}+1<em>2^{1}+0</em>2^{0}$<br>那么$2^{10}=2^{1<em>2^{3}+0</em>2^{2}+1<em>2^{1}+0</em>2^{0}}=2^{2^{1}}*2^{2^{3}}$</p>
+<h2 id="算法讲解"><a href="#算法讲解" class="headerlink" title="算法讲解"></a>算法讲解</h2><h4 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h4><p>对于$a^{b}$,假设为$2^{10}$<br>将10写成2进制：$1<em>2^{3}+0</em>2^{2}+1<em>2^{1}+0</em>2^{0}$<br>那么$2^{10}=2^{1<em>2^{3}+0</em>2^{2}+1<em>2^{1}+0</em>2^{0} }=2^{2^{1} }*2^{2^{3} }$</p>
 <p>不管权值是0还是1，算法中2的多少次方是需要不断累加的，前面乘以0或1表示这个数要不要（任何一个数都可以由若干个2的多少次方组成）</p>
 <p>b &amp; 1，也就是将b与1按位与，因为1的二进制是1，也就是说b除了最后一位，其他位都和0相与，那么得到的值一定都是0。而最后一位与上1，那么原来位实际上是不变的。这样我们就获得了b的最后一位的值。<br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ll </span>poww(<span class="keyword">ll </span>a,<span class="keyword">ll </span><span class="keyword">b)&#123;//快速幂 </span></span><br><span class="line">	<span class="keyword">ll </span>ans=<span class="number">1</span><span class="comment">;</span></span><br><span class="line">	<span class="keyword">ll </span><span class="keyword">base=a;</span></span><br><span class="line"><span class="keyword">	</span>while(<span class="keyword">b)&#123;</span></span><br><span class="line"><span class="keyword">	</span>	if(<span class="keyword">b&amp;1)</span></span><br><span class="line"><span class="keyword">	</span>		ans*=<span class="keyword">base;</span></span><br><span class="line"><span class="keyword">	</span>	<span class="keyword">base*=base;</span></span><br><span class="line"><span class="keyword">	</span>	<span class="keyword">b&gt;&gt;=1;</span></span><br><span class="line"><span class="keyword">	</span>&#125;</span><br><span class="line">	return ans<span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>如果还没懂就看下面的图<br><img src="/2019/05/14/快速幂/poww.jpg" alt="快速幂"></p>
@@ -979,7 +979,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
