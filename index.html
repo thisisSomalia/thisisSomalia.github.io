@@ -1510,7 +1510,7 @@ DriverManager 管理jdbc驱动Connection  连接(通过DriverManager产生)State
       
         
           
-          1.JSP页面元素####a.脚本Scriptlet[注] 都是在body里面写i.
+          1.JSP页面元素a.脚本Scriptlet[注] 都是在body里面写i.
 
 &lt;%局部变量、java语句%&gt;
 
@@ -1522,7 +1522,7 @@ iii.
 
 &lt;%=输出表达式%&gt;
 
-eg:123456789101112131415       &
+eg:123456789101112131415       &lt;%
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1952,7 +1952,7 @@ eg:123456789101112131415       &
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -2379,6 +2379,28 @@ eg:123456789101112131415       &
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

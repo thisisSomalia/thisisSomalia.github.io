@@ -77,17 +77,17 @@
 
 
 
-<meta name="description" content="1.JSP页面元素####a.脚本Scriptlet[注] 都是在body里面写i.  &amp;lt;%局部变量、java语句%&amp;gt;  ii.  &amp;lt;%!全局变量、定义方法%&amp;gt;  iii.  &amp;lt;%=输出表达式%&amp;gt;  eg:123456789101112131415       &amp;lt;%!	public String bookNake;	public void init()&amp;#">
+<meta name="description" content="1.JSP页面元素a.脚本Scriptlet[注] 都是在body里面写i.  &amp;lt;%局部变量、java语句%&amp;gt;  ii.  &amp;lt;%!全局变量、定义方法%&amp;gt;  iii.  &amp;lt;%=输出表达式%&amp;gt;  eg:123456789101112131415       &amp;lt;%!	public String bookNake;	public void init()&amp;#123;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JSP">
 <meta property="og:url" content="http://yoursite.com/2019/05/03/JSP/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.JSP页面元素####a.脚本Scriptlet[注] 都是在body里面写i.  &amp;lt;%局部变量、java语句%&amp;gt;  ii.  &amp;lt;%!全局变量、定义方法%&amp;gt;  iii.  &amp;lt;%=输出表达式%&amp;gt;  eg:123456789101112131415       &amp;lt;%!	public String bookNake;	public void init()&amp;#">
+<meta property="og:description" content="1.JSP页面元素a.脚本Scriptlet[注] 都是在body里面写i.  &amp;lt;%局部变量、java语句%&amp;gt;  ii.  &amp;lt;%!全局变量、定义方法%&amp;gt;  iii.  &amp;lt;%=输出表达式%&amp;gt;  eg:123456789101112131415       &amp;lt;%!	public String bookNake;	public void init()&amp;#123;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-05-03T03:27:27.906Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSP">
-<meta name="twitter:description" content="1.JSP页面元素####a.脚本Scriptlet[注] 都是在body里面写i.  &amp;lt;%局部变量、java语句%&amp;gt;  ii.  &amp;lt;%!全局变量、定义方法%&amp;gt;  iii.  &amp;lt;%=输出表达式%&amp;gt;  eg:123456789101112131415       &amp;lt;%!	public String bookNake;	public void init()&amp;#">
+<meta name="twitter:description" content="1.JSP页面元素a.脚本Scriptlet[注] 都是在body里面写i.  &amp;lt;%局部变量、java语句%&amp;gt;  ii.  &amp;lt;%!全局变量、定义方法%&amp;gt;  iii.  &amp;lt;%=输出表达式%&amp;gt;  eg:123456789101112131415       &amp;lt;%!	public String bookNake;	public void init()&amp;#123;">
 
 
 
@@ -366,7 +366,7 @@
       
 
       
-        <h2 id="1-JSP页面元素"><a href="#1-JSP页面元素" class="headerlink" title="1.JSP页面元素"></a>1.JSP页面元素</h2><p>####a.脚本Scriptlet<br>[注] 都是在body里面写<br>i.</p>
+        <h2 id="1-JSP页面元素"><a href="#1-JSP页面元素" class="headerlink" title="1.JSP页面元素"></a>1.JSP页面元素</h2><h4 id="a-脚本Scriptlet"><a href="#a-脚本Scriptlet" class="headerlink" title="a.脚本Scriptlet"></a>a.脚本Scriptlet</h4><p>[注] 都是在body里面写<br>i.</p>
 <blockquote>
 <p>&lt;%<br>局部变量、java语句<br>%&gt;</p>
 </blockquote>
@@ -380,11 +380,11 @@
 </blockquote>
 <p>eg:<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">       &lt;%!</span><br><span class="line">	public String bookNake;</span><br><span class="line">	public void init()&#123;</span><br><span class="line">		<span class="attribute">bookName</span>=<span class="string">"java书"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">====hello index1 你好<span class="built_in">..</span>.====</span><br><span class="line">&lt;%</span><br><span class="line">	String <span class="attribute">name</span>=<span class="string">"zhangsan"</span>;</span><br><span class="line">	out.<span class="builtin-name">print</span>(<span class="string">"hello..."</span>+name);</span><br><span class="line">	init();</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;%=<span class="string">"hello..."</span>+bookName %&gt;</span><br></pre></td></tr></table></figure></p>
 <p>一般而言，如果修改web.xml、配置文件、java文件需要重启tomcat服务器<br>但是如果修改jsp、html、css、js不需要重启</p>
-<p>####b.指令<br>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”  pageEncoding=”UTF-8”%  import=”java.util.Date” %&gt;</p>
+<h4 id="b-指令"><a href="#b-指令" class="headerlink" title="b.指令"></a>b.指令</h4><p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”  pageEncoding=”UTF-8”%  import=”java.util.Date” %&gt;</p>
 <blockquote>
 <p>page指令: &lt;%@ …. %&gt;<br>page指定的属性:<br>&emsp;&emsp;language：jsp页面使用的脚本语言<br>&emsp;&emsp;import：导入类（比如后面的代码要用Date类，就要在这个地方impor）<br>&emsp;&emsp;pageEncoding:jsp文件自身编码（jsp-&gt;java）<br>&emsp;&emsp;contentType:浏览器解析jsp的编码（与上面要保持一致）</p>
-</blockquote>
 <h4 id="c-注释"><a href="#c-注释" class="headerlink" title="c.注释"></a>c.注释</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--html注释--&gt;</span>   可以通过浏览器查看源码观察到，但是下面两个不行</span><br><span class="line">java注释  //  /**/</span><br><span class="line"><span class="tag">&lt;<span class="name">%--jsp注释--%</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</blockquote>
 <h2 id="2-JSP内置对象（九个）"><a href="#2-JSP内置对象（九个）" class="headerlink" title="2.JSP内置对象（九个）"></a>2.JSP内置对象（九个）</h2><p>自带的，不用new也能使用</p>
 <ol>
 <li>out:想客户端输出内容</li>
@@ -400,6 +400,7 @@
 </blockquote>
 </li>
 </ol>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -431,7 +432,8 @@
 </tr>
 </tbody>
 </table>
-<ol start="5">
+</div>
+<ol>
 <li><p>Cookie(客户端，不是内置对象，所以需要new。但是服务端会自动new一个name=JESSIONID的cookie)：由服务端生成的，再发送给客户端保存</p>
 <blockquote>
 <p>&emsp;相当于本地缓存的作用：如第一次先把服务端的内容下载下来保存到本地，之后看便可以直接在本地。<br>&emsp;客户端第一次请求服务端时，如果服务端发现此请求没有JESSIONID，则会创建一个name=JESSIONID的cookie，并返回给客户端。<br>&emsp;作用：提高访问服务端的效率，但是安全性较差。<br><br><br>Cookie：key=value(一个Cookie包含一个键值对)<br>在java.servlet.http.Cookie里面<br>public Cookie(String name,String value)<br>void setMaxAge(int expiry) 最大有效期(秒)<br><br><br>服务端准备Cookie:<br>&emsp;response.addCookie(Cookie cookie)<br>页面跳转<br>客户端获取cookie：<br>&emsp;resquest.getCookies()<br>a.服务端增加cookie：response对象    客户端获取对象:request对象<br>b.不能直接获取某一个cookie，只能一次性将所有的cookie拿到<br><br><br>通过F12发以发线，除了自己设置的Cookie之外，还有一个name为JSESSIONID的cookie<br><br><br>使用Cookie实现记住用户名功能</p>
@@ -443,25 +445,25 @@
 </blockquote>
 </li>
 </ol>
-<ol start="7">
+<ol>
 <li>application全局对象<blockquote>
 <p>String getContextPath() 虚拟路径<br>String getRealPath(String name)  绝对路径(虚拟路径相对的绝对路径)</p>
 </blockquote>
 </li>
 </ol>
-<ol start="8">
+<ol>
 <li>config配置对象<blockquote>
 <p>服务器配置信息</p>
 </blockquote>
 </li>
 </ol>
-<ol start="9">
+<ol>
 <li>page当前jsp页面对象<blockquote>
 <p>相当于JAVA里面的this</p>
 </blockquote>
 </li>
 </ol>
-<ol start="10">
+<ol>
 <li>exception<blockquote>
 <p>异常对象</p>
 </blockquote>
@@ -607,7 +609,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -704,7 +706,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JSP页面元素"><span class="nav-number">1.</span> <span class="nav-text">1.JSP页面元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#c-注释"><span class="nav-number">1.0.1.</span> <span class="nav-text">c.注释</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JSP内置对象（九个）"><span class="nav-number">2.</span> <span class="nav-text">2.JSP内置对象（九个）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-四种范围对象-小-gt-大"><span class="nav-number">3.</span> <span class="nav-text">3.四种范围对象(小-&gt;大)</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JSP页面元素"><span class="nav-number">1.</span> <span class="nav-text">1.JSP页面元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-脚本Scriptlet"><span class="nav-number">1.0.1.</span> <span class="nav-text">a.脚本Scriptlet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-指令"><span class="nav-number">1.0.2.</span> <span class="nav-text">b.指令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-注释"><span class="nav-number">1.0.3.</span> <span class="nav-text">c.注释</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JSP内置对象（九个）"><span class="nav-number">2.</span> <span class="nav-text">2.JSP内置对象（九个）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-四种范围对象-小-gt-大"><span class="nav-number">3.</span> <span class="nav-text">3.四种范围对象(小-&gt;大)</span></a></li></div>
             
 
           </div>
@@ -1054,6 +1056,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

@@ -382,7 +382,8 @@
 <h2 id="2-JDBC访问数据库的具体步骤"><a href="#2-JDBC访问数据库的具体步骤" class="headerlink" title="2.JDBC访问数据库的具体步骤"></a>2.JDBC访问数据库的具体步骤</h2><blockquote>
 <p>a.导入驱动，加载具体的驱动类(eclipse里面先把jar包复制过来，再buildpath):<br>Class.forName(“具体驱动类”);<br>b.与数据库建立连接:<br>Connection connection=DriverManager.getConnection(“连接字符串”,”用户名”,”密码”);<br>c.发送sql，执行sql命令(增删改、查)：<br>Statement stmt=connection.createStatement();<br>String sql=”xxxx”;(按照表的属性来写,自己写代码主要是改这个sql，其他的都是模板)<br>int count=stmt.executeUpdate(sql);//返回值表示增删改几条数据;如果是查询，则是executeQuery,同时返回的不是一个数，而是结果集<br>//ResultSet<br>//最后记得关闭一下<br>if(stmt!=null) stmt.close();<br>if(connection!=null) connection.close();//先开的后关<br>d.处理结果集（需要查询时）</p>
 </blockquote>
-<h2 id="3-数据库驱动"><a href="#3-数据库驱动" class="headerlink" title="3.数据库驱动"></a>3.数据库驱动</h2><table>
+<h2 id="3-数据库驱动"><a href="#3-数据库驱动" class="headerlink" title="3.数据库驱动"></a>3.数据库驱动</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th style="text-align:center"></th>
@@ -412,6 +413,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h2 id="4-JDBC总结（模板）"><a href="#4-JDBC总结（模板）" class="headerlink" title="4.JDBC总结（模板）"></a>4.JDBC总结（模板）</h2><h4 id="1-模板："><a href="#1-模板：" class="headerlink" title="1.模板："></a>1.模板：</h4><figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">a.导入驱动包，加载具体驱动类<span class="type">Class</span>.forName(<span class="string">"具体驱动类"</span>)</span><br><span class="line">b.与数据库建立连接</span><br><span class="line">connection=<span class="type">DriverManager</span>.getConnection(...)</span><br><span class="line">c.通过connection，获取操作数据库的对象（<span class="type">Statement</span>\preparedStatement\callablestatement）</span><br><span class="line"><span class="built_in">stmt</span>=connection.createStatement()</span><br><span class="line">d.(查询)处理结果集rs=pstmt.executeQuery()</span><br><span class="line"><span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">    rs.getXxx(..);&#125;</span><br><span class="line">&#125;catch(<span class="type">ClassNotFoundException</span> e)<span class="meta">&#123;...&#125;</span></span><br><span class="line">catch(<span class="type">SQLException</span> e)<span class="meta">&#123;...&#125;</span></span><br><span class="line">catch(<span class="type">Exception</span> e)<span class="meta">&#123;...&#125;</span></span><br><span class="line"><span class="keyword">finally</span>&#123;</span><br><span class="line">    //打开顺序与关闭顺序相反</span><br><span class="line">    <span class="keyword">if</span>(rs!=null) rs.close();</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">stmt</span>!=null) <span class="built_in">stmt</span>.close();</span><br><span class="line">    <span class="keyword">if</span>(connection!=null) connection.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>[注]: JDBC中，除了Class.forName() 抛出ClassNotFoundException,其余方法都抛SQLException<br><br></p>
 <h4 id="2-JSP访问数据库"><a href="#2-JSP访问数据库" class="headerlink" title="2.JSP访问数据库"></a>2.JSP访问数据库</h4><p>&emsp;JSP就是在html中嵌套JAVA代码，因此JAVA代码可以直接写在JSP里（&lt;%…%&gt;）<br>&emsp;导包操作<br>&emsp;&emsp;&emsp;JAVA项目：1.JAR包复制到工程中；2.右键该JAR：build path-&gt;add to buile path<br>&emsp;&emsp;&emsp;Web项目：JAR包复制到WEB-INF中lib即可<br>&emsp;核心：就是把JAVA中JDBC代码复制到JSP的&lt;%..%&gt;中<br>[注]: 如果JSP出现：XXX import is not resolved …<br>尝试解决步骤：<br>&emsp;a.可能是tomcat、jdk版本问题：右键项目-&gt;build path，将其中报错的library或lib删除后重新导入<br>&emsp;b.情空各种缓存：右键项目-&gt;clean tomcat… （project-&gt;clean或进tomcat目录删除里面work的子目录）<br>&emsp;c.删除之前的tomcat，重新解压缩、配置tomcat重启电脑<br>&emsp;d.把java类放到包里面（新建一个），然后在JSP里面导包</p>
@@ -553,7 +555,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1000,6 +1002,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

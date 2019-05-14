@@ -374,18 +374,19 @@
         <p>[toc]</p>
 <h2 id="1-MVC设计模式"><a href="#1-MVC设计模式" class="headerlink" title="1.MVC设计模式"></a>1.MVC设计模式</h2><p>M：模型：一个功能。用JAVABean实现<br>V：视图：用于展示、用户交互。使用HTML、JSS、JS、JSP、JQUERY等前端技术实现<br>C：控制器：接受请求，将请求套转到模型进行处理；模型处理完毕之后，再将处理的结果返回给请求处。可以用JSP实现，但是<font color="red">一般建议用Servlet实现控制器。</font></p>
 <p><img src="/2019/05/07/MVC&Servlet/MVC.jpg" alt="MVC&amp;Servlet"></p>
-<h2 id="2-Servlet"><a href="#2-Servlet" class="headerlink" title="2.Servlet"></a>2.Servlet</h2><p>是个JAVA类，但有要求：<br>&emsp;a.必须继承javax.servlet.http.HttpServlet<br>&emsp;b.重写其中的doGet()或doPost()方法<br>[注]: doGet()：接受并处理所有get提交方式的请求<br>&emsp;&emsp;doPost()：接受并处理所有post提交方式的请求</p>
+<h2 id="2-Servlet"><a href="#2-Servlet" class="headerlink" title="2.Servlet"></a>2.Servlet</h2><p>是个JAVA类，但有要求：<br>&emsp;a.必须继承javax.servlet.http.HttpServlet<br>&emsp;b.重写其中的doGet()或doPost()方法</p>
+<p>&emsp;&emsp;doPost()：接受并处理所有post提交方式的请求</p>
 <p>Servlet要想使用，必须配置<br>if Servlet2.5:web.xml<br>if Servlet3.0:@WebServlet</p>
 <p>Servlet2.5的配置：<br><img src="/2019/05/07/MVC&Servlet/servlet.png" alt="Servlet"><br>在index.jsp有一个超链接请求<code>&lt;a href=&quot;WelcomeServlet&quot;&gt;xx&lt;/a&gt;</code><br>然后在这个配置文件中,url-pattern会拦截这个，要去找对应的类，通过servlet-name去找对应的类（两个servlet—name是用来对应配对的）</p>
 <p>Servlet3.0不需要配置Web.xml,但需要在Servlet类的定义处之上编写注解@WebServlet(“url-pattern的值”)<br>匹配流程：<code>&lt;a href&gt;</code>中的请求地址与@WebServlet中值匹配，如果成功，则说明请求的就是该注解所对应的类</p>
 <h2 id="3-回顾创建第一个Servlet"><a href="#3-回顾创建第一个Servlet" class="headerlink" title="3.回顾创建第一个Servlet"></a>3.回顾创建第一个Servlet</h2><h4 id="3-1纯手工生成"><a href="#3-1纯手工生成" class="headerlink" title="3.1纯手工生成"></a>3.1纯手工生成</h4><p>步骤：<br>&emsp;1.编写一个类，继承HttpServlet，并且重写doGet和doPost方法<br>&emsp;2.编写web.xml中的servlet映射关系</p>
-<p>####3.2借助Eclipse快速生成servlet<br>&emsp;在包那里右键new一个servlet,弄好了之后你就会发现web.xml自动写好了映射关系。<br>[注]：<br>&emsp;servlet的那个类名一般和url-pattern的一样<br>&emsp;如果index.jsp中请求<code>&lt;a href=&quot;abc&quot;&gt;...&lt;/a&gt;</code>,则既会在src根目录(也叫构建路径)里面找，也会在WebContent根目录里面找<br>&emsp;web.xml中/：第一个/代表在localhost:8080/Project/里面<br>&emsp;jsp中的/：第一个/代表在localhost:8080/中<br><img src="/2019/05/07/MVC&Servlet/杠.png" alt="3"></p>
+<h4 id="3-2借助Eclipse快速生成servlet"><a href="#3-2借助Eclipse快速生成servlet" class="headerlink" title="3.2借助Eclipse快速生成servlet"></a>3.2借助Eclipse快速生成servlet</h4><p>&emsp;在包那里右键new一个servlet,弄好了之后你就会发现web.xml自动写好了映射关系。<br><a href="此注解隶属于某个具体的Servlet，因此无法为整Web容器设置初始化参数（如果要设置整个容器的初始化参数，则跟2.5一样需要在web.xml中设置）">注</a>：<br>&emsp;servlet的那个类名一般和url-pattern的一样<br>&emsp;如果index.jsp中请求<code>&lt;a href=&quot;abc&quot;&gt;...&lt;/a&gt;</code>,则既会在src根目录(也叫构建路径)里面找，也会在WebContent根目录里面找<br>&emsp;web.xml中/：第一个/代表在localhost:8080/Project/里面<br>&emsp;jsp中的/：第一个/代表在localhost:8080/中<br><img src="/2019/05/07/MVC&Servlet/杠.png" alt="3"></p>
 <h2 id="4-Servlet生命周期"><a href="#4-Servlet生命周期" class="headerlink" title="4.Servlet生命周期"></a>4.Servlet生命周期</h2><p>加载-&gt;初始化-&gt;服务-&gt;销毁-&gt;卸载<br>加载、卸载：Servlet容器自动处理，我们不用管<br>初始化：init()，该方法会在Servlet被加载并实例化之后执行<br>服务：service()，具体的实现是doGet doPost<br>销毁：destroy()，Servlet实例被系统回收时执行</p>
 <p>init()：第一次访问时被执行，只执行这一次<br>service()：doGet doPost调用几次执行几次<br>destroy()：关闭tomcat服务时，执行一次</p>
 <h2 id="5-Servlet-API"><a href="#5-Servlet-API" class="headerlink" title="5.Servlet API"></a>5.Servlet API</h2><p>&emsp;由两个软件包组成，对应HTTP协议的软件包和除了HTTP协议以外的其他软件包</p>
 <h2 id="6-Servlet继承关系"><a href="#6-Servlet继承关系" class="headerlink" title="6.Servlet继承关系"></a>6.Servlet继承关系</h2><p>ServletConfig：接口<br>ServletContext getServletContext():获取Servlet上下文对象，appli就是它产生的一个对象<br>String getInitParameter(String name):在当前Servlet范围内，获取名为name的参数值（即初始化参数）</p>
 <p>ServletContext中常用方法(当做application)：<br>getContextPath():相对路径<br>getRealPath()：绝对路径<br>setAttribute()、getAttribute()<br>String getInitParameter(String name):在当前Web容器范围内，获取名为name的参数值（即初始化参数）</p>
-<p>Servlet3.0方式给当前Servlet设置初始值<br>@WebServlet(...initParams={@WebInitParam(name=”servletparaname30”,value=”servletparavalue30”)})<br>[注]: 此注解隶属于某个具体的Servlet，因此无法为整Web容器设置初始化参数（如果要设置整个容器的初始化参数，则跟2.5一样需要在web.xml中设置）</p>
+<p>Servlet3.0方式给当前Servlet设置初始值<br>@WebServlet(…initParams={@WebInitParam(name=”servletparaname30”,value=”servletparavalue30”)})</p>
 <p><img src="/2019/05/07/MVC&Servlet/request.png" alt="4"><br>&emsp;HttpServletRequest中的方法同jsp的request一样，例如setAttribute()  getCookies()  getMethod()<br>&emsp;HttpServletResponse中的方法同jsp的response一样</p>
 
       
@@ -520,7 +521,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -617,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-MVC设计模式"><span class="nav-number">1.</span> <span class="nav-text">1.MVC设计模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Servlet"><span class="nav-number">2.</span> <span class="nav-text">2.Servlet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-回顾创建第一个Servlet"><span class="nav-number">3.</span> <span class="nav-text">3.回顾创建第一个Servlet</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1纯手工生成"><span class="nav-number">3.0.1.</span> <span class="nav-text">3.1纯手工生成</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Servlet生命周期"><span class="nav-number">4.</span> <span class="nav-text">4.Servlet生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Servlet-API"><span class="nav-number">5.</span> <span class="nav-text">5.Servlet API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Servlet继承关系"><span class="nav-number">6.</span> <span class="nav-text">6.Servlet继承关系</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-MVC设计模式"><span class="nav-number">1.</span> <span class="nav-text">1.MVC设计模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Servlet"><span class="nav-number">2.</span> <span class="nav-text">2.Servlet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-回顾创建第一个Servlet"><span class="nav-number">3.</span> <span class="nav-text">3.回顾创建第一个Servlet</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1纯手工生成"><span class="nav-number">3.0.1.</span> <span class="nav-text">3.1纯手工生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2借助Eclipse快速生成servlet"><span class="nav-number">3.0.2.</span> <span class="nav-text">3.2借助Eclipse快速生成servlet</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Servlet生命周期"><span class="nav-number">4.</span> <span class="nav-text">4.Servlet生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Servlet-API"><span class="nav-number">5.</span> <span class="nav-text">5.Servlet API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Servlet继承关系"><span class="nav-number">6.</span> <span class="nav-text">6.Servlet继承关系</span></a></li></div>
             
 
           </div>
@@ -967,6 +968,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
