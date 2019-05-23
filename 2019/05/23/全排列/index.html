@@ -77,17 +77,17 @@
 
 
 
-<meta name="description" content="裸的并查集吧，卡了半天，真的太菜了。">
+<meta name="description" content="DFS入门题目">
 <meta property="og:type" content="article">
-<meta property="og:title" content="并查集--团伙">
-<meta property="og:url" content="http://yoursite.com/2019/05/15/并查集--团伙/index.html">
+<meta property="og:title" content="全排列--DFS">
+<meta property="og:url" content="http://yoursite.com/2019/05/23/全排列/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="裸的并查集吧，卡了半天，真的太菜了。">
+<meta property="og:description" content="DFS入门题目">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-15T03:59:16.115Z">
+<meta property="og:updated_time" content="2019-05-23T12:14:12.042Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="并查集--团伙">
-<meta name="twitter:description" content="裸的并查集吧，卡了半天，真的太菜了。">
+<meta name="twitter:title" content="全排列--DFS">
+<meta name="twitter:description" content="DFS入门题目">
 
 
 
@@ -117,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/15/并查集--团伙/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/23/全排列/">
 
 
 
 
 
-  <title>并查集--团伙 | Hexo</title>
+  <title>全排列--DFS | Hexo</title>
   
 
 
@@ -260,7 +260,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/15/并查集--团伙/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/23/全排列/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feng Yang">
@@ -277,7 +277,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">并查集--团伙</h1>
+          <h1 class="post-title" itemprop="name headline">全排列--DFS</h1>
         
 
         <div class="post-meta">
@@ -289,8 +289,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-15T11:59:43+08:00">
-                2019-05-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-23T20:14:29+08:00">
+                2019-05-23
               </time>
             
 
@@ -312,8 +312,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构与算法/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构与算法</span>
+                  <a href="/categories/2019-5/" itemprop="url" rel="index">
+                    <span itemprop="name">2019.5</span>
                   </a>
                 </span>
 
@@ -329,7 +329,7 @@
 
           
           
-             <span id="/2019/05/15/并查集--团伙/" class="leancloud_visitors" data-flag-title="并查集--团伙">
+             <span id="/2019/05/23/全排列/" class="leancloud_visitors" data-flag-title="全排列--DFS">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -366,17 +366,20 @@
       
 
       
-        <p>裸的并查集吧，卡了半天，真的太菜了。<br><a id="more"></a><br><a href="http://codevs.cn/problem/2597/" target="_blank" rel="noopener">传送门</a><br>题目描述 Description<br>1920年的芝加哥，出现了一群强盗。如果两个强盗遇上了，那么他们要么是朋友，要么是敌人。而且有一点是肯定的，就是：<br>我朋友的朋友是我的朋友；<br>我敌人的敌人也是我的朋友。<br>两个强盗是同一团伙的条件是当且仅当他们是朋友。现在给你一些关于强盗们的信息，问你最多有多少个强盗团伙。</p>
-<p>输入描述 Input Description<br>第一行是一个整数N(2&lt;=N&lt;=1000)，表示强盗的个数（从1编号到N）。 第二行M(1&lt;=M&lt;=5000)，表示关于强盗的信息条数。 以下M行，每行可能是F p q或是E p q（1&lt;=p q&lt;=N），F表示p和q是朋友，E表示p和q是敌人。输入数据保证不会产生信息的矛盾。</p>
-<p>输出描述 Output Description<br>只有一行，表示最大可能的团伙数。</p>
-<p>样例输入 Sample Input<br>6<br>4<br>E 1 4<br>F 3 5<br>F 4 6<br>E 1 2</p>
-<p>样例输出 Sample Output<br>3</p>
-<p>数据范围及提示 Data Size &amp; Hint<br>2&lt;=N&lt;=1000<br>1&lt;=M&lt;=5000<br>1&lt;=p q&lt;=N</p>
-<p>分析：</p>
-<blockquote>
-<p>定义个数组表示敌人，分i有无敌人两种情况处理，别想太复杂了。。。<br>当时半天A不过有两个原因。main中x和y都不小心定义成char了，，，第二个是数组的下标都从0开始了，这个题目里面要从1开始，因为不存在第0个人。</p>
-</blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1005</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">int</span> n,m,num=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> pre[maxn];</span><br><span class="line"><span class="keyword">int</span> enemy[maxn];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x!=pre[x])</span><br><span class="line">    &#123;</span><br><span class="line">        pre[x]=find(pre[x]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> pre[x];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">join</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> fx=find(x),fy=find(y);</span><br><span class="line">	<span class="keyword">if</span>(fx!=fy)&#123;</span><br><span class="line">		pre[fx]=fy;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(enemy[x]==<span class="number">0</span>)<span class="comment">//x没有敌人 </span></span><br><span class="line">		enemy[x]=find(y);<span class="comment">//y</span></span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		join(enemy[x],y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">   	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">   	<span class="keyword">char</span> type;</span><br><span class="line">		<span class="keyword">int</span> x,y;</span><br><span class="line">   	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">   		pre[i]=i;<span class="comment">//初始化 </span></span><br><span class="line">   	<span class="keyword">while</span>(m--)&#123;</span><br><span class="line">   		</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;type&gt;&gt;x&gt;&gt;y;</span><br><span class="line">		<span class="keyword">if</span>(type==<span class="string">'F'</span>)</span><br><span class="line">			join(x,y);</span><br><span class="line">		<span class="keyword">else</span>&#123;<span class="comment">//敌人 </span></span><br><span class="line">			solve(x,y);</span><br><span class="line">			solve(y,x);</span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">if</span>(pre[i]==i)</span><br><span class="line">			num++;</span><br><span class="line">   	<span class="built_in">cout</span>&lt;&lt;num;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>DFS入门题目<br><a id="more"></a></p>
+<p><a href="http://codevs.cn/problem/1294/" target="_blank" rel="noopener">传送门</a></p>
+<p><font size="5"><strong>题目描述 Description</strong></font><br>给出一个n, 请输出n的所有全排列</p>
+<p><font size="5"><strong>输入描述 Input Description</strong></font><br>读入仅一个整数n   (1&lt;=n&lt;=10)</p>
+<p><font size="5"><strong>输出描述 Output Description</strong></font><br>一共n!行，每行n个用空格隔开的数，表示n的一个全排列。并且按全排列的字典序输出。</p>
+<p><font size="5"><strong>样例输入 Sample Input</strong></font><br>3</p>
+<p><font size="5"><strong>样例输出 Sample Output</strong></font><br>1 2 3</p>
+<p>1 3 2</p>
+<p>2 1 3</p>
+<p>2 3 1</p>
+<p>3 1 2</p>
+<p>3 2 1</p>
+<p><font size="5"><strong>分析</strong></font>：<br>&emsp;这个题目用next_permutation(p,p+n)会TLE，得用搜索。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">bool</span> vis[<span class="number">15</span>];</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">15</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(x&gt;=n+<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;p[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">if</span>(!vis[i])&#123;</span><br><span class="line">			p[x]=i;<span class="comment">//别写成p[i] </span></span><br><span class="line">			vis[i]=<span class="literal">true</span>;</span><br><span class="line">			DFS(x+<span class="number">1</span>);</span><br><span class="line">			vis[i]=<span class="literal">false</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">    DFS(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -409,8 +412,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/14/快速幂/" rel="next" title="快速幂">
-                <i class="fa fa-chevron-left"></i> 快速幂
+              <a href="/2019/05/15/并查集--团伙/" rel="next" title="并查集--团伙">
+                <i class="fa fa-chevron-left"></i> 并查集--团伙
               </a>
             
           </div>
@@ -418,10 +421,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/23/全排列/" rel="prev" title="全排列--DFS">
-                全排列--DFS <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
