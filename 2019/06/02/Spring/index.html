@@ -77,13 +77,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/04/index.html">
+<meta name="description" content="IOC(控制反转)也可称为DI(依赖注入)  控制反转：将创建对象、属性值的方式进行翻转，从new、setXxx()翻转为从springIOC容器getBean() 依赖注入： 将属性值注入给属性 将属性注入给bean 将bean注入给ioc容器    在ioc中定义bean的前提：该bean的类必须提供无参构造 自动装配&amp;lt;bean id=&amp;quot;xxx&amp;quot; class=&amp;quo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring">
+<meta property="og:url" content="http://yoursite.com/2019/06/02/Spring/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="IOC(控制反转)也可称为DI(依赖注入)  控制反转：将创建对象、属性值的方式进行翻转，从new、setXxx()翻转为从springIOC容器getBean() 依赖注入： 将属性值注入给属性 将属性注入给bean 将bean注入给ioc容器    在ioc中定义bean的前提：该bean的类必须提供无参构造 自动装配&amp;lt;bean id=&amp;quot;xxx&amp;quot; class=&amp;quo">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/06/02/Spring/通知类型.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/02/Spring/后置通知.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/02/Spring/LogAround1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/02/Spring/LogAround2.jpg">
+<meta property="og:updated_time" content="2019-06-02T07:42:44.744Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Spring">
+<meta name="twitter:description" content="IOC(控制反转)也可称为DI(依赖注入)  控制反转：将创建对象、属性值的方式进行翻转，从new、setXxx()翻转为从springIOC容器getBean() 依赖注入： 将属性值注入给属性 将属性注入给bean 将bean注入给ioc容器    在ioc中定义bean的前提：该bean的类必须提供无参构造 自动装配&amp;lt;bean id=&amp;quot;xxx&amp;quot; class=&amp;quo">
+<meta name="twitter:image" content="http://yoursite.com/2019/06/02/Spring/通知类型.jpg">
 
 
 
@@ -113,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/04/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/02/Spring/">
 
 
 
 
 
-  <title>Archive | Hexo</title>
+  <title>Spring | Hexo</title>
   
 
 
@@ -138,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -242,177 +251,227 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/02/Spring/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Feng Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Spring</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-02T15:42:46+08:00">
+                2019-06-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 20 posts in total. Keep on posting.
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/JAVA/" itemprop="url" rel="index">
+                    <span itemprop="name">JAVA</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2019/06/02/Spring/" class="leancloud_visitors" data-flag-title="Spring">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/16/numpy/" itemprop="url">
-              
-                <span itemprop="name">numpy</span>
-              
-            </a>
-        
-      </h2>
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-16T21:31:24+08:00" content="2019-04-16">
-          04-16
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+	
+	
+      
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/15/tomcat启动后访问404/" itemprop="url">
-              
-                <span itemprop="name">tomcat启动之后访问404</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-15T09:42:44+08:00" content="2019-04-15">
-          04-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>IOC(控制反转)也可称为DI(依赖注入)</p>
+<ol>
+<li>控制反转：将创建对象、属性值的方式进行翻转，从new、setXxx()翻转为从springIOC容器getBean()</li>
+<li>依赖注入：<ul>
+<li>将属性值注入给属性</li>
+<li>将属性注入给bean</li>
+<li>将bean注入给ioc容器</li>
+</ul>
+</li>
+</ol>
+<p>在ioc中定义bean的前提：该bean的类必须提供无参构造</p>
+<h2 id="自动装配"><a href="#自动装配" class="headerlink" title="自动装配"></a>自动装配</h2><p><code>&lt;bean id=&quot;xxx&quot; class=&quot;org.lanqiao.entity.Course&quot; autowire=&quot;byName&quot;&gt;</code>，只有ref类型可以，value是不行的</p>
+<p>有三种方式:</p>
+<ol>
+<li><p>byName<br>若其它bean的id值=该Course类的属性名，则将前者注入到后者</p>
+</li>
+<li><p>byType<br>其它bean的类型（class）是否与该Course类的ref属性类型一致（必须满足：当前ioc容器中只能有一个Bean满足条件）</p>
+</li>
+<li>constructor<br> 其它bean的类型（class）是否与该Course类的构造方法参数的类型一致</li>
+</ol>
+<p>如果觉得每一个bean都要加autowire很麻烦，可以在配置文件最上面beans里面的xsi:schemaLocation中最后面加个<code>default-autowire=&quot;byName&quot;</code>,一次性给所有的bean都装配。（这是全局性，子标签可以覆盖全局性）</p>
+<h2 id="通过注解定义bean"><a href="#通过注解定义bean" class="headerlink" title="通过注解定义bean"></a>通过注解定义bean</h2><p>通过注解的形式将bean及相应的属性值放入ioc容器中</p>
+<p><code>&lt;context:component-scan base-package=&quot;org.lanqiao.dao&quot;&gt;
+&lt;/context:component-scan&gt;</code><br>Spring会根据base-package在该包中扫描所有类，查找这些类是否有注解。若有则将该类加入IOC容器。</p>
+<p>@Component注解细化：</p>
+<ul>
+<li>@Repository  Dao层</li>
+<li>@Service  Service层</li>
+<li>@Controller  控制器层</li>
+</ul>
+<p><br></p>
+<p><img src="/2019/06/02/Spring/通知类型.jpg" alt="环绕通知1"></p>
+<h2 id="后置通知"><a href="#后置通知" class="headerlink" title="后置通知"></a>后置通知</h2><p>a. 通知类，普通实现接口（接口是固定的，前置通知异常通知都不一样）<br>b. 业务类、业务方法<br>    StudentServiceImpl中addStudent()<br>c.配置<br>    将业务类、通知纳入IOC容器<br>    定义切入点（一段）、定义通知类（另一端），通过pointcut-ref将两端连接起来<br><img src="/2019/06/02/Spring/后置通知.jpg" alt="后置通知"></p>
+<h2 id="环绕通知"><a href="#环绕通知" class="headerlink" title="环绕通知"></a>环绕通知</h2><p><img src="/2019/06/02/Spring/LogAround1.jpg" alt="环绕通知1"><br><img src="/2019/06/02/Spring/LogAround2.jpg" alt="环绕通知2"></p>
+<p>如果要获取目标对象信息：<br>注解、schema：JoinPoint（有时候是ProceedingJoinPoint jp）<br>接口：Method method,Object[] args,Object target<br>schema形式和注解形式相似，不同之处注解形式使用了注姐(如 @After最终通知)，schema形式进行了多余的配置</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/11/单调队列/" itemprop="url">
-              
-                <span itemprop="name">单调队列</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-11T20:37:40+08:00" content="2019-04-11">
-          04-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/07/动态规划--初级/" itemprop="url">
-              
-                <span itemprop="name">动态规划--初级</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-07T15:27:48+08:00" content="2019-04-07">
-          04-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+	<div>
+
+<div>
+
+    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+
+
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/02/修路/" rel="next" title="修路--Kruskal裸">
+                <i class="fa fa-chevron-left"></i> 修路--Kruskal裸
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/02/尺取法/" rel="prev" title="尺取法+例题">
+                尺取法+例题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -420,6 +479,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -440,8 +503,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -558,6 +630,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自动装配"><span class="nav-number">1.</span> <span class="nav-text">自动装配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过注解定义bean"><span class="nav-number">2.</span> <span class="nav-text">通过注解定义bean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后置通知"><span class="nav-number">3.</span> <span class="nav-text">后置通知</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环绕通知"><span class="nav-number">4.</span> <span class="nav-text">环绕通知</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -734,6 +822,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -898,26 +990,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
